@@ -10,15 +10,32 @@
 
     <header>
         <h1>CEEBJA IVAIPORÃ</h1>
-        <p>Educação de Jovens e Adultos</p>
+        <p>Centro Estadual de Educação de Jovens e Adultos</p>
     </header>
 
     <main class="container">
+        
+        <section class="gallery">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=500" alt="Fachada do CEEBJA Ivaiporã">
+                <p class="caption">Nossa Escola</p>
+            </div>
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500" alt="Salas de Aula">
+                <p class="caption">Ambiente de Aprendizado</p>
+            </div>
+        </section>
+
         <section class="info-school">
-            <h2>Quem Somos & Contato</h2>
+            <h2>Sobre a Instituição</h2>
+            <p class="description">
+                O CEEBJA Ivaiporã é focado em oferecer ensino de qualidade para jovens e adultos que buscam concluir seus estudos (Ensino Fundamental e Médio) com flexibilidade e acolhimento.
+            </p>
+
+            <h3>Informações de Contato</h3>
             
             <div class="card">
-                <strong>Diretora:</strong>
+                <strong>Diretora Geral:</strong>
                 <p>Erica Renati Kronitzky Viana</p>
             </div>
 
@@ -28,12 +45,12 @@
             </div>
 
             <div class="card">
-                <strong>WhatsApp:</strong>
+                <strong>WhatsApp da Secretaria:</strong>
                 <p><a href="https://wa.me/5543996311542" target="_blank">(43) 99631-1542</a></p>
             </div>
 
             <div class="card">
-                <strong>Endereço:</strong>
+                <strong>Localização:</strong>
                 <p>Praça Professor Milton Pirolo, nº 375 - Ivaiporã - PR</p>
             </div>
         </section>
@@ -41,15 +58,27 @@
         <hr>
 
         <section class="feedback-section">
-            <h3>O que você acha do nosso colégio?</h3>
-            <p>Deixe a sua opinião abaixo!</p>
-            
+            <h3>Você gosta do colégio?</h3>
             <div class="buttons-container">
-                <button id="btn-gosto" class="btn btn-like">👍 Eu gosto</button>
+                <button id="btn-gosto" class="btn btn-like">👍 Sim, gosto!</button>
                 <button id="btn-nao-gosto" class="btn btn-dislike">👎 Não gosto</button>
             </div>
-            
             <p id="mensagem-feedback" class="mensagem"></p>
+        </section>
+
+        <hr>
+
+        <section class="suggestions-section">
+            <h3>Espaço do Estudante: Deixe sua Sugestão</h3>
+            <p>Sua opinião ajuda a melhorar nossa escola cada vez mais.</p>
+            
+            <form id="form-sugestao">
+                <input type="text" id="nome-estudante" placeholder="Seu nome (opcional)">
+                <textarea id="texto-sugestao" rows="4" placeholder="Digite aqui sua sugestão ou ideia..." required></textarea>
+                <button type="submit" class="btn btn-submit">Enviar Sugestão</button>
+            </form>
+            
+            <p id="mensagem-sugestao" class="mensagem"></p>
         </section>
     </main>
 
