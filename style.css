@@ -1,0 +1,139 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0c4a60;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Container Principal */
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    flex: 1;
+}
+
+h2, h3 {
+    color: #0c4a60;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Cards de Informação */
+.card {
+    background-color: #f8fafc;
+    border-left: 4px solid #10b981;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.card strong {
+    color: #4b5563;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.card a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 2rem 0;
+}
+
+/* Seção de Feedback (Botões) */
+.feedback-section {
+    text-align: center;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn-like {
+    background-color: #10b981;
+    color: white;
+}
+
+.btn-like:hover {
+    background-color: #059669;
+}
+
+.btn-dislike {
+    background-color: #ef4444;
+    color: white;
+}
+
+.btn-dislike:hover {
+    background-color: #dc2626;
+}
+
+/* Mensagem de Feedback */
+.mensagem {
+    margin-top: 1.5rem;
+    font-weight: 600;
+    min-height: 24px;
+    transition: color 0.3s;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1e293b;
+    color: #94a3b8;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
