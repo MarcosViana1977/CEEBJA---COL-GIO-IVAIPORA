@@ -3,87 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CEEBJA Ivaiporã</title>
+    <title>CEEBJA Ivaiporã - Portal Oficial</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <h1>CEEBJA IVAIPORÃ</h1>
-        <p>Centro Estadual de Educação de Jovens e Adultos</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo"><i class="fa-solid fa-graduation-cap"></i> CEEBJA Ivaiporã</a>
+            <div class="nav-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+                <a href="#interacao">Opinião</a>
+                <a href="#sugestoes">Sugestões</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-banner">
+        <div class="hero-content">
+            <h1>Educação que Transforma Vidas</h1>
+            <p>Modalidade EJA (Educação de Jovens e Adultos) em Ivaiporã - PR. O momento de concluir seus estudos é agora!</p>
+            <a href="#sobre" class="btn btn-primary">Conheça Nossa Escola</a>
+        </div>
     </header>
 
-    <main class="container">
+    <main class="main-container">
         
-        <section class="gallery">
-            <div class="image-box">
-                <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=500" alt="Fachada do CEEBJA Ivaiporã">
-                <p class="caption">Nossa Escola</p>
-            </div>
-            <div class="image-box">
-                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500" alt="Salas de Aula">
-                <p class="caption">Ambiente de Aprendizado</p>
+        <section id="sobre" class="section-block">
+            <h2 class="section-title">Sobre a Instituição</h2>
+            <div class="grid-two-columns">
+                <div class="about-text">
+                    <p>O <strong>CEEBJA Ivaiporã</strong> é uma instituição da rede estadual de ensino do Paraná voltada a jovens e adultos que buscam flexibilidade e acolhimento pedagógico para finalizar o Ensino Fundamental ou Médio.</p>
+                    <p>Com metodologia adequada ao ritmo de vida dos estudantes, a escola promove a inclusão social e abre novas portas para o mercado de trabalho.</p>
+                </div>
+                <div class="gallery-wrapper">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600" alt="Estudantes em sala de aula">
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="info-school">
-            <h2>Sobre a Instituição</h2>
-            <p class="description">
-                O CEEBJA Ivaiporã é focado em oferecer ensino de qualidade para jovens e adultos que buscam concluir seus estudos (Ensino Fundamental e Médio) com flexibilidade e acolhimento.
-            </p>
+        <section id="contato" class="section-block bg-light">
+            <h2 class="section-title">Informações de Contato</h2>
+            <div class="contact-grid">
+                
+                <div class="contact-card">
+                    <div class="icon-box"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3>Direção Geral</h3>
+                    <p>Erica Renati Kronitzky Viana</p>
+                </div>
 
-            <h3>Informações de Contato</h3>
+                <div class="contact-card">
+                    <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>E-mail Institucional</h3>
+                    <p><a href="mailto:ivpceebjaivaipora@seed.pr.gov.br">ivpceebjaivaipora@seed.pr.gov.br</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="icon-box"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/5543996311542" target="_blank">(43) 99631-1542</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>Endereço</h3>
+                    <p>Praça Professor Milton Pirolo, nº 375<br>Ivaiporã - PR</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="interacao" class="section-block text-center">
+            <h2 class="section-title">Sua Avaliação</h2>
+            <p class="subtitle">Você gosta de estudar ou fazer parte da comunidade do CEEBJA Ivaiporã?</p>
             
-            <div class="card">
-                <strong>Diretora Geral:</strong>
-                <p>Erica Renati Kronitzky Viana</p>
+            <div class="feedback-container">
+                <button id="btn-gosto" class="vote-btn like">
+                    <i class="fa-regular fa-thumbs-up"></i> Eu gosto do colégio
+                </button>
+                <button id="btn-nao-gosto" class="vote-btn dislike">
+                    <i class="fa-regular fa-thumbs-down"></i> Poderia melhorar
+                </button>
             </div>
+            <div id="mensagem-feedback" class="feedback-alert"></div>
+        </section>
 
-            <div class="card">
-                <strong>E-mail Institucional:</strong>
-                <p><a href="mailto:ivpceebjaivaipora@seed.pr.gov.br">ivpceebjaivaipora@seed.pr.gov.br</a></p>
-            </div>
-
-            <div class="card">
-                <strong>WhatsApp da Secretaria:</strong>
-                <p><a href="https://wa.me/5543996311542" target="_blank">(43) 99631-1542</a></p>
-            </div>
-
-            <div class="card">
-                <strong>Localização:</strong>
-                <p>Praça Professor Milton Pirolo, nº 375 - Ivaiporã - PR</p>
+        <section id="sugestoes" class="section-block bg-light">
+            <div class="form-container">
+                <h2 class="section-title">Caixa de Sugestões</h2>
+                <p class="text-center subtitle">Espaço exclusivo para estudantes enviarem ideias, críticas ou elogios.</p>
+                
+                <form id="form-sugestao">
+                    <div class="form-group">
+                        <label for="nome-estudante">Seu Nome (Opcional):</label>
+                        <input type="text" id="nome-estudante" placeholder="Ex: João Silva">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="texto-sugestao">Sua Sugestão:</label>
+                        <textarea id="texto-sugestao" rows="5" placeholder="Escreva aqui detalhadamente a sua sugestão..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-block">Enviar Mensagem</button>
+                </form>
+                <div id="mensagem-sugestao" class="feedback-alert"></div>
             </div>
         </section>
 
-        <hr>
-
-        <section class="feedback-section">
-            <h3>Você gosta do colégio?</h3>
-            <div class="buttons-container">
-                <button id="btn-gosto" class="btn btn-like">👍 Sim, gosto!</button>
-                <button id="btn-nao-gosto" class="btn btn-dislike">👎 Não gosto</button>
-            </div>
-            <p id="mensagem-feedback" class="mensagem"></p>
-        </section>
-
-        <hr>
-
-        <section class="suggestions-section">
-            <h3>Espaço do Estudante: Deixe sua Sugestão</h3>
-            <p>Sua opinião ajuda a melhorar nossa escola cada vez mais.</p>
-            
-            <form id="form-sugestao">
-                <input type="text" id="nome-estudante" placeholder="Seu nome (opcional)">
-                <textarea id="texto-sugestao" rows="4" placeholder="Digite aqui sua sugestão ou ideia..." required></textarea>
-                <button type="submit" class="btn btn-submit">Enviar Sugestão</button>
-            </form>
-            
-            <p id="mensagem-sugestao" class="mensagem"></p>
-        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 CEEBJA Ivaiporã. Todos os direitos reservados.</p>
+    <footer class="main-footer">
+        <p>&copy; 2026 CEEBJA Ivaiporã. Secretaria da Educação do Paraná (SEED-PR).</p>
+        <p class="sub-footer">Desenvolvido para fins institucionais e de atendimento ao estudante.</p>
     </footer>
 
     <script src="script.js"></script>
